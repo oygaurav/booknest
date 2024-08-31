@@ -19,6 +19,9 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- <script src="js/jquery.min.js"></script> -->
+
 </head>
 
 <body>
@@ -132,7 +135,7 @@
                         <img src="../assets/bestsellers/image 11.png" class="img-fluid" alt="">
                     </div>
                     <div class="book-info">
-                        <h2>Orange is the 
+                        <h2>Orange is the
                             New Black</h2>
                         <p class="author">by Piper Kerman
                         </p>
@@ -140,17 +143,26 @@
                             <p><strong>Category</strong><br>Non-Fiction</p>
                             <p><strong>Pages</strong><br>313</p>
                         </div>
-                        <a href="" class="read-now-btn">Read Now</a>
+                        <a href="../assets/bestsellers/500-KB.pdf" class="read-now-btn">Read Now</a>
                     </div>
 
+                    
                 </div>
                 <div class="col-md-7 book-card-text">
                     <h3>What is it about ?</h3>
-                    <p>With her career, live-in boyfriend and loving family, Piper Kerman barely resembles the rebellious young woman who got mixed up with drug runners and delivered a suitcase of drug money to Europe over a decade ago. But when she least expects it, her reckless past catches up with her; convicted and sentenced to fifteen months at an infamous women's prison in Connecticut, Piper becomes inmate #11187-424. From her first strip search to her final release, she learns to navigate this strange world with its arbitrary rules and codes, its unpredictable, even dangerous relationships. She meets women from all walks of life, who surprise her with tokens of generosity, hard truths and simple acts of acceptance.
+                    <p>With her career, live-in boyfriend and loving family, Piper Kerman barely resembles the
+                        rebellious young woman who got mixed up with drug runners and delivered a suitcase of drug money
+                        to Europe over a decade ago. But when she least expects it, her reckless past catches up with
+                        her; convicted and sentenced to fifteen months at an infamous women's prison in Connecticut,
+                        Piper becomes inmate #11187-424. From her first strip search to her final release, she learns to
+                        navigate this strange world with its arbitrary rules and codes, its unpredictable, even
+                        dangerous relationships. She meets women from all walks of life, who surprise her with tokens of
+                        generosity, hard truths and simple acts of acceptance.
                     </p>
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- book ends here -->
@@ -214,6 +226,11 @@
         </footer>
     </div>
     <script src="../index.js"></script>
+
+    <!-- <script src="js/three.min.js"></script>
+<script src="js/pdf.min.js"></script>
+
+<script src="js/3dflipbook.min.js"></script> -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const dropdownToggle = document.getElementById('dropdownMenuButton');
@@ -322,24 +339,8 @@
 
     </script>
 
-    <script>
-        $(document).ready(function () {
-            $('.book-slider').slick({
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                centerMode: true,
-                variableWidth: true,
-                dots: true,
-                focusOnSelect: true,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                arrows: false
-            });
-        });
+    
 
-
-    </script>
 
 </body>
 
