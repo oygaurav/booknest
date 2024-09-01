@@ -455,16 +455,37 @@ margin-top: 60px;
 
 
   
-#pdf-container {
-    width: 800px;
-    height: 600px;
-    margin: 0 auto;
+/* myaccount starts */
+
+.myaccount{
+    padding: 100px 20px;
 }
 
-#flipbook img {
-    width: 100%;
-    height: auto;
+.myaccount h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
 }
+
+.myaccount h3{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Lora", serif;
+    margin-top: 30px;
+}
+
+.myaccount-btn{
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #632B6C;
+    color: white;
+    font-family: "Lora", serif;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+/* myaccount ends */
 
 
 
