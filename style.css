@@ -294,6 +294,9 @@ header {
 
     .heading h3 a{
         font-size: 12px;
+        position: relative;
+        left: -25%;
+        top: -15%;
     }
 
     .heading p{
@@ -301,6 +304,10 @@ header {
     }
     .d-md-block{
         display: none !important;
+    }
+
+    .heading{
+        padding-right: 0px;
     }
     
 }
@@ -486,6 +493,18 @@ margin-top: 60px;
 
 /* myaccount ends */
 
+.categories .slick-track{
+    position: relative !important;
+    left: 110px !important;
+}
+
+@media (max-width: 768px) {
+    .categories .slick-track{
+        position: relative !important;
+        left: 50px !important;
+    }
+    
+}
 
 
 
