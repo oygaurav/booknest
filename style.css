@@ -29,6 +29,10 @@ body {
     background-color: #FDFCFC;
 }
 
+html {
+    scroll-behavior: smooth !important;
+}
+
 .gap-top{
     padding-top: 60px;
 }

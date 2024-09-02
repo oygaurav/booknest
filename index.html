@@ -1016,8 +1016,10 @@
             $(".categories").slick({
                 dots: false,
                 infinite: true,
-                speed: 300,
+                speed: 600,
                 slidesToShow: 5.5,
+                swipeToSlide: true, // Enables smooth swiping
+                touchThreshold: 10, // Adjusts touch sensitivity
 
                 responsive: [
                     {
