@@ -144,16 +144,21 @@
                             <p><strong>Category</strong><br>Non-Fiction</p>
                             <p><strong>Pages</strong><br>539</p>
                         </div>
-                        <a href="http://13.202.29.192/content/Book%20Nest/Crime/2nd%20chance/2nd%20Chance.pdf" target="_blank" class="read-now-btn">Read Now</a>
+                        <a href="#" onclick="openPdfInViewer();"
+                            target="_blank" class="read-now-btn">Read Now</a>
                     </div>
 
-                    
+
                 </div>
                 <div class="col-md-7 book-card-text">
                     <h3>What is it about ?</h3>
-                    <p>When fifteen-year-old Eragon finds a polished blue stone in the forest, he thinks it is the lucky discovery of a poor farm boy. But when the stone brings a dragon hatchling, Eragon soon realizes he has stumbled upon a legacy nearly as old as the Empire itself.
-<br>
-                        Overnight his simple life is shattered, and, gifted with only an ancient sword, a loyal dragon, and sage advice from an old storyteller, Eragon is soon swept into a dangerous tapestry of magic, glory, and power. Now his choices could save—or destroy—the Empire.
+                    <p>When fifteen-year-old Eragon finds a polished blue stone in the forest, he thinks it is the lucky
+                        discovery of a poor farm boy. But when the stone brings a dragon hatchling, Eragon soon realizes
+                        he has stumbled upon a legacy nearly as old as the Empire itself.
+                        <br>
+                        Overnight his simple life is shattered, and, gifted with only an ancient sword, a loyal dragon,
+                        and sage advice from an old storyteller, Eragon is soon swept into a dangerous tapestry of
+                        magic, glory, and power. Now his choices could save—or destroy—the Empire.
                     </p>
                 </div>
             </div>
@@ -277,7 +282,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
         $(document).ready(function () {
-             $(".categories").slick({
+            $(".categories").slick({
                 dots: false,
                 infinite: true,
                 speed: 300,
@@ -335,7 +340,12 @@
 
     </script>
 
-    
+<script>
+    function openPdfInViewer() {
+        var pdfUrl = 'http://13.202.29.192/content/Book%20Nest/Crime/2nd%20chance/2nd%20Chance.pdf';
+        window.open(pdfUrl, '_blank');
+    }
+</script>
 
 
 </body>
