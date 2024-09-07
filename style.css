@@ -302,6 +302,8 @@ header {
     font-weight: 500;
 }
 
+
+
 @media (max-width: 768px) {
     .heading h2{
         font-size: 18px;
@@ -324,6 +326,10 @@ header {
 
     .heading{
         padding-right: 0px;
+    }
+    .heading .swiper-wrapper{
+        position: relative !important;
+        left: 30% !important;
     }
     
 }
