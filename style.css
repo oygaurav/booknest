@@ -302,7 +302,11 @@ header {
     font-weight: 500;
 }
 
-
+.heading .swiper-wrapper{
+    position: relative ;
+    left: 28%;
+    margin-top: 10px;
+}
 
 @media (max-width: 768px) {
     .heading h2{
@@ -328,8 +332,9 @@ header {
         padding-right: 0px;
     }
     .heading .swiper-wrapper{
-        position: relative !important;
-        left: 30% !important;
+        position: relative ;
+        left: 30%;
+        margin-top: 10px;
     }
     
 }
