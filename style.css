@@ -34,7 +34,7 @@ html {
 }
 
 .gap-top{
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
 .gap-bottom{
@@ -256,6 +256,16 @@ header {
     margin-top: 20px;
   }
 
+  .center-item img{
+    border-radius: 8px !important;
+  }
+
+  @media (max-width: 768px) {
+    .center img{
+        border-radius: 8px !important;
+      }
+}
+
 /* hero ends */
 
 
@@ -276,6 +286,7 @@ header {
     font-size: 32px;
     color: #632B6C;
     font-weight: 500;
+    margin-bottom: -10px;
 }
 
 .heading h3 a{
@@ -305,6 +316,7 @@ header {
 
     .heading p{
         font-size: 12px;
+        margin-bottom: -20px;
     }
     .d-md-block{
         display: none !important;
@@ -369,7 +381,7 @@ padding: 40px 20px;
     height: 100%;
     border-radius: 40px 40px 0px 0px;
     background: #FBF4F7;
-padding: 40px 20px;
+padding: 40px 0px 40px 20px;
 margin-top: 60px;
 }
 
@@ -382,7 +394,7 @@ margin-top: 60px;
     align-items: stretch;
     padding: 20px;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 25px;
 }
 
 .book-cover {
@@ -455,12 +467,20 @@ margin-top: 60px;
 
 @media (max-width: 768px) {
     .book-card-text{
-        margin-top: 40px;
+        margin-top: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .book-cover img {
         width: 140px;
     }
+
+    
+.snaps-item-2 .categories .slick-track{
+    position: relative !important;
+    left: 41px !important;
+}
 }
 /* book1 ends */
 
