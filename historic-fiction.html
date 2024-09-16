@@ -71,12 +71,13 @@
     </div>
     <!-- mobile nav starts -->
     <header class="d-md-none">
-        <div class="menu-icon" onclick="toggleMenu()">
-            <span>&#9776;</span>
-        </div>
         <div class="logo-center">
             <a href="./index.html"><img src="./assets/logo/Logo.png" alt="Logo"></a>
         </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span>&#9776;</span>
+        </div>
+        
         <!-- <div class="search-icon" onclick="toggleSearch()">
             <img src="./assets/logo/search.png" alt="Search" id="searchIcon">
         </div> -->
@@ -92,27 +93,25 @@
         <ul>
             <li><a href="./index.html"><i class="fa-solid fa-house"></i> Home</a></li>
             <li class="dropdown">
-                <a href="#" onclick="toggleDropdown(event)"><i class="fa-solid fa-list"></i> Categories &#9662;</a>
+                <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)"><i class="fa-solid fa-list"></i> Categories</a>
                 <ul class="dropdown-content">
-
                     <li><a class="dropdown-item" href="./trending.html">Trending Books</a></li>
                     <li><a class="dropdown-item" href="./bestsellers.html">Bestsellers to Motion Pictures</a></li>
                     <li><a class="dropdown-item" href="./crime.html">Crime</a></li>
-                    <li><a class="dropdown-item" href="./fantacy.html">Fantacy</a></li>
+                    <li><a class="dropdown-item" href="./fantacy.html">Fantasy</a></li>
                     <li><a class="dropdown-item" href="./fiction.html">Fiction</a></li>
                     <li><a class="dropdown-item" href="./finance.html">Finance</a></li>
                     <li><a class="dropdown-item" href="./historic-fiction.html">Historic Fiction</a></li>
                     <li><a class="dropdown-item" href="./horror.html">Horror</a></li>
                     <li><a class="dropdown-item" href="./mystery.html">Mystery</a></li>
                     <li><a class="dropdown-item" href="./non-fiction.html">Non-Fiction</a></li>
-                    <li><a class="dropdown-item" href="./phychology.html">Phychology</a></li>
+                    <li><a class="dropdown-item" href="./psychology.html">Psychology</a></li>
                     <li><a class="dropdown-item" href="./romance.html">Romance</a></li>
                     <li><a class="dropdown-item" href="./self-care.html">Self Care</a></li>
                     <li><a class="dropdown-item" href="./thriller.html">Thriller</a></li>
                 </ul>
             </li>
-            <li><a href="./myaccount.html" class="nav-link text-dark"><i class="fa-solid fa-user"></i> My Account</a>
-            </li>
+            <li><a href="./myaccount.html" class="nav-link"><i class="fa-solid fa-user"></i> My Account</a></li>
         </ul>
     </nav>
 
@@ -236,10 +235,26 @@
         }
 
         function toggleDropdown(event) {
-            event.preventDefault();
-            const parent = event.target.parentElement;
-            parent.classList.toggle('open');
+    event.preventDefault();
+    
+    // Find the parent dropdown element
+    const dropdown = event.target.closest('.dropdown');
+    
+    // Find the dropdown content element within this dropdown
+    const dropdownContent = dropdown.querySelector('.dropdown-content');
+
+    // Toggle the 'open' class on the current dropdown content
+    dropdownContent.classList.toggle('open');
+
+    // Add a one-time event listener to the document to close the dropdown if clicking outside
+    document.addEventListener('click', function closeDropdown(e) {
+        // Check if the click is outside the dropdown
+        if (!dropdown.contains(e.target)) {
+            dropdownContent.classList.remove('open');
+            document.removeEventListener('click', closeDropdown);
         }
+    }, { once: true });
+}
 
         function toggleInnerDropdown(event) {
             event.preventDefault();
