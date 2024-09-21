@@ -72,6 +72,7 @@ header {
 .menu-icon, .search-icon {
     font-size: 30px;
     cursor: pointer;
+    color: #632B6C
 }
 
 .search-icon {
